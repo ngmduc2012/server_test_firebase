@@ -27,7 +27,7 @@ public class SendMessageController {
      *              bị đó.
      *################################################################################################
      */
-    /* Test Postman with POST - body - raw - JSOM, this is an example:
+    /* Test Postman with POST - body - raw - JSON, this is an example:
     {
     "token": ["eKf3ErtlTZmm6ONz7PQea1:APA91bELFdwszVEKEEBI4Esvoh6C0HYLz_no2gyy2iE94XGHlz8ddR62GtukfQPls3dHedvOmb2NKJY_fzL2G8LBV5c2mN9dYF6R9TU0JCT2yirfUzqmJm64tf38eewWlohvv4l_MkRJ"],
     "title": "Check In",
