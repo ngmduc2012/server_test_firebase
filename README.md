@@ -1,8 +1,9 @@
 Mô tả mô hình: 
   
 (1)	Người dùng gửi dữ liệu qua API
+
 (2)	Server xử lý dữ liệu sau đó gửi các thông tin cấu hình thông báo tới Firebase
- 
+
 (3)	Firebase sẽ đợi thiết bị kết nối mạng và gửi thông báo tới thiết bị. 
 Dữ liệu bao gồm: 
 Postman
