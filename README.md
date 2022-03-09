@@ -5,8 +5,11 @@ Mô tả mô hình:
 (2)	Server xử lý dữ liệu sau đó gửi các thông tin cấu hình thông báo tới Firebase
 
 (3)	Firebase sẽ đợi thiết bị kết nối mạng và gửi thông báo tới thiết bị. 
+
 Dữ liệu bao gồm: 
+
 Postman
+
 curl --location --request POST 'http://localhost:8080/send' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -21,7 +24,9 @@ curl --location --request POST 'http://localhost:8080/send' \
     "deviceName" : "Face Terminal CIST"
 
 }'
+
 Chi tiết
+
 Token: được sinh ra từ thiết bị. 
 Title: tiêu đề của thông báo
 Body: nội dung của thông báo
@@ -30,10 +35,15 @@ Icon: tên icon thông báo (được lưu sẵn trong app android)
 Color: màu sắc của icon thông báo. 
 Time: thời gian chấm công
 deviceName: tên thiết bị chấm công. 
+
 Server
+
 Code nguồn:
+
 https://github.com/ngmduc2012/server_test_firebase.git
+
 Fire config firebase: 
+
 Dùng để xác thực và gửi tới chính xác thiết bị muốn nhận. 
 Trong git tại lục: server_test_firebase/src/main/java/com/cmc/server/faceAdminEmployee/civams-face-firebase-adminsdk-8k335-c86ed9fe62.json
 
