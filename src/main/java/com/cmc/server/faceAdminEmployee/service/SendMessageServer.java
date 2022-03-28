@@ -96,7 +96,7 @@ public class SendMessageServer {
     // cài đặt file sdk tại : https://firebase.google.com/docs/admin/setup#windows
     public void setUpToken() throws IOException {
         FileInputStream serviceAccount =
-                new FileInputStream("..\\civams-face-firebase-adminsdk-8k335-c86ed9fe62.json");
+                new FileInputStream("..\\civams-face-d7e68-firebase-adminsdk-z1qwf-dd88b6509c.json");
         FirebaseOptions options = new FirebaseOptions.Builder()
                 .setCredentials(GoogleCredentials.fromStream(serviceAccount))
                 .build();
