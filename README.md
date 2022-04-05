@@ -1,3 +1,5 @@
+Cấu hình: 
+Sử dụng SDK 16.0.2
 Mô tả mô hình: 
   
 (1)	Người dùng gửi dữ liệu qua API
