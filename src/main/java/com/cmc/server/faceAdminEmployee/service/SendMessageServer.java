@@ -62,13 +62,13 @@ public class SendMessageServer {
             map.put("time", timeString);
             map.put("device", request.getDeviceName());
 
-            //The following: https://firebase.google.com/docs/cloud-messaging/send-message#customize-messages-across-platforms
+            // The following: https://firebase.google.com/docs/cloud-messaging/send-message#customize-messages-across-platforms
             MulticastMessage message = MulticastMessage.builder()
                     .setNotification(Notification.builder()
                             .setTitle(request.getTitle())
                             .setBody(request.getBody() + " at " + timeString + " in " + request.getDeviceName())
                             .build())
-                    //For Android
+                    // For Android
                     .setAndroidConfig(AndroidConfig.builder()
                             .setTtl(request.getTtl())
                             .setNotification(AndroidNotification.builder()
@@ -76,7 +76,8 @@ public class SendMessageServer {
                                     .setColor(request.getColor())
                                     .build())
                             .build())
-                    //For Ios
+                    // For Ios
+                    // the following: https://www.programcreek.com/java-api-examples/?api=com.google.firebase.messaging.Message
                     .setApnsConfig(ApnsConfig.builder()
                             .putHeader("apns-priority", "10")
                             .setAps(Aps.builder()
